@@ -7,6 +7,8 @@ export const metadata = {
   description: "Browse our collection of products",
 };
 
+export const dynamic = "force-dynamic";
+
 const Products = async () => {
   // fetch data from api
   const data: IProduct[] = await getProducts();
