@@ -2,7 +2,7 @@ import { connectDB } from "@/src/lib/dbConnect";
 import { Product } from "@/src/models/Products";
 import { NextResponse } from "next/server";
 
-export const PUT = async (req: Request, { params }: { params: { id: string } }) => {
+export const PUT = async (req: Request, { params }: { params: Promise<{ id: string }> }) => {
   try {
     // connect DB
     const db = await connectDB();
@@ -27,7 +27,7 @@ export const PUT = async (req: Request, { params }: { params: { id: string } }) 
 
 
 
-export const DELETE = async (req: Request, { params }: { params: { id: string } }) => {
+export const DELETE = async (req: Request, { params }: { params: Promise<{ id: string }> }) => {
   try {
     // connect DB
     const db = await connectDB();
