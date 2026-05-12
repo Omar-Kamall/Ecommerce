@@ -7,7 +7,7 @@ export const metadata = {
 
 const Products = async () => {
   // fetch data from api
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("/api/products");
   const { data }: { data: IProduct[] } = await res.json();
 
   if (data?.length === 0)
