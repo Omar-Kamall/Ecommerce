@@ -37,7 +37,7 @@ const Card = ({
     <div className="w-full rounded-2xl shadow-md shadow-gray-300 overflow-hidden bg-transparent border border-gray-200 hover:shadow-xl transition-all duration-300">
       <div className="relative w-full h-48">
         <Image
-          src={image}
+          src={image || "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"}
           alt={title}
           sizes="(max-width: 768px) 100vw, 33vw"
           fill
