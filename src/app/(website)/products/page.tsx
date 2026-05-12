@@ -27,7 +27,7 @@ const Products = async () => {
                 title={product.title}
                 description={product.description}
                 category={product.category}
-                image={product.image}
+                image={product.image || "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"}
                 stock={product.stock}
                 price={product.price}
                 discount={product.discount}
