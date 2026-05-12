@@ -16,7 +16,7 @@ const useRegister = () => {
   // post data tanstack query
   const mutation = useMutation({
     mutationFn: async (data: IUserFormInput) => {
-      return await api.post("/users/register", data);
+      return await api.post("/api/users/register", data);
     },
     onSuccess: (data) => {
       // reset form

@@ -35,7 +35,7 @@ const useCard = (
       setLoading(true);
 
       // update product
-      await api.put(`/products/${product._id}`, {
+      await api.put(`/api/products/${product._id}`, {
         ...data,
         price: data.price || 0,
         discount: data.discount || 0,

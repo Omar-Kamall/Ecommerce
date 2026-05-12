@@ -34,7 +34,7 @@ const useProduct = () => {
     if (confirmed) {
       try {
         // delete product logic here
-        await api.delete(`/products/${_id}`);
+        await api.delete(`/api/products/${_id}`);
 
         // show toast
         toast.success("Product deleted successfully!");

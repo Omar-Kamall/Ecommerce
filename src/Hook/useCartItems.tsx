@@ -15,7 +15,7 @@ const useCartItems = (setIsOpen: Dispatch<SetStateAction<boolean>>) => {
       // update loading
       setLoadind(true);
 
-      await api.post("/products", {
+      await api.post("/api/products", {
         ...data,
         price: data.price || 0,
         discount: data.discount || 0,

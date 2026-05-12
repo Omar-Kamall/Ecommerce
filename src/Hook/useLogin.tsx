@@ -18,7 +18,7 @@ const useLogin = () => {
   // post data tanstack query
   const mutation = useMutation({
     mutationFn: async (data: IUserFormInput) => {
-      const res = await api.post("/users/login", data);
+      const res = await api.post("/api/users/login", data);
       return res.data;
     },
 

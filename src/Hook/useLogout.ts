@@ -16,7 +16,7 @@ export const useLogout = () => {
       setLoading(true);
 
       // Call the logout API route to clear the token cookie
-      await api.post("/users/logout");
+      await api.post("/api/users/logout");
 
       // Redirect to login page after logout
       router.push("/login");
